@@ -1,0 +1,68 @@
+<sulci>
+ <jabber>
+  <server>jabber.ru</server>
+  <port>5222</port>
+  <user>xxxx</user>
+  <resource>Ocaml</resource>
+  <password>secret</password>
+ </jabber>
+
+ <!-- Reconnect interval in seconds. If count=0 do it infinitely -->
+ <!-- If you use NOT OWN jabber server, it is strongly recommended do not
+      do counts more than 3.
+ -->
+ <reconnect interval='10' count='3' />
+
+ <log>
+  <report>report.log</report>
+  <rawxml>rawxml.log</rawxml>
+ </log>
+
+ <lang dir="./lang" default="ru"/>
+
+ <acl jid='ermine@jabber.ru' class='admin'/>
+ 
+ <max_message_length value="4000"/>
+
+ <muc msg_limit="400">
+   <db>./sulci_muc.db</db>
+   <chatlogs>./chatlogs</chatlogs>
+ </muc>
+
+ <plugins>
+
+  <google>
+   <key>00000000000000000000000000000</key>
+  </google>
+
+  <vocabulary db="vocabulary.db"/>
+
+  <mueller file="/path/to/Mueller24.koi" hashext=".hash" />
+
+  <markov dir="./markov_db" msg_limit="20" />
+
+  <!-- it used on http://ejabberd.jabber.ru/ to display total registered users 
+       and users online using ejabberd -->
+  <!--
+    <globalstats>
+     <store serverlist='servers.list' result='servers.res' interval='3600'/>
+    </globalstats>
+  -->
+
+      <dict>
+         <!-- <server port=2628>localhost</server> -->
+         <server>dict.org</server>
+      </dict>
+
+      <tld db="./tlds/tlds"/>
+
+      <talkers db="talkers.db"/>
+
+      <cerberus kick="true">
+         <notify jid="jid@jabber.server"/>
+      </cerberus>
+
+      <seen db="./sulci_users.db"/>
+
+   </plugins>
+</sulci>

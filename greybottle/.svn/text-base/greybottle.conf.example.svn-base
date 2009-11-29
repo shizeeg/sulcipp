@@ -1,0 +1,16 @@
+# my kewl config
+port = 9998
+
+logfile = /var/log/policy.log
+
+db_file = ./greymail.db
+
+# in seconds
+grey_delay = 60
+
+#to prevent from spamers' use our helo
+my_helo = mx.first.com, mx.second.com
+
+# to receive email only for those people
+my_recipients = guy1@first.com, root@first.com, postmaster@first.com,
+		guy2@second.com, root@second.com, postmaster@second.com

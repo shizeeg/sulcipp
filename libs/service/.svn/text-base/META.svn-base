@@ -1,0 +1,6 @@
+description = "XMPP Service library"
+requires = "getopt xmpp strftime logger xmlstring"
+version = "1"
+archive(byte) = "service.cma"
+archive(native) = "service.cmxa"
+

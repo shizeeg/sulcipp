@@ -1,0 +1,12 @@
+"dehtml": include
+"getopt": include
+"ini_config": include
+"logger": include
+"scheduler": include
+"strftime": include
+<scheduler2/*.ml{i,}>: thread
+
+"xmlstring": include
+"xmlstring_netstring": include
+"xml": include
+"xmpp": include

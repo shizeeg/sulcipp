@@ -1,0 +1,6 @@
+description = "Simple Xmlstring library"
+requires = "xmlstring"
+version = "1"
+archive(byte) = "xmlstring_netstring.cma"
+archive(native) = "xmlstring_netstring.cmxa"
+

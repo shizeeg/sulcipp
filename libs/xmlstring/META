@@ -1,0 +1,6 @@
+description = "Simple Xmlstring library"
+requires = "ulex xml"
+version = "1"
+archive(byte) = "xmlstring.cma"
+archive(native) = "xmlstring.cmxa"
+

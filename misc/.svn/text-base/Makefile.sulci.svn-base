@@ -1,0 +1,16 @@
+LIB_PROJECTS =	cryptokit dehtml xml xmlstring xmlstring_netstring getopt \
+		sqlite sqlite_util scheduler strftime xmpp
+
+all:
+	echo "export OCAMLPATH=$(shell pwd)/site-lib" > Makefile.global
+	for dir in $(LIB_PROJECTS); do \
+	   $(MAKE) -C ./libs/$$dir rawinstall; \
+	done
+	$(MAKE) -C sulci
+
+.PHONY: clean
+clean:
+	for dir in $(LIB_PROJECTS); do \
+	   $(MAKE) -C ./libs/$$dir clean; \
+	done
+	$(MAKE) -C sulci clean

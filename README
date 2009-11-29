@@ -1,0 +1,8 @@
+Ocaml "Just for fun" Software
+Anastasia Gornostaeva <ermine@ermine.pp.ru>
+
+
+Sulci		It is a Jabber bot
+Grey Bottle	It is a policy server for Postfix
+xmpp		An implementation Jabber/XMPP
+Service		Service engine for building services for Jabber

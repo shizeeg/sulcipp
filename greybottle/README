@@ -1,0 +1,40 @@
+Ocaml "Just for fun" Software
+Anastasia Gornostaeva <ermine@ermine.pp.ru>
+
+
+Grey Bottle
+------------------------------------------------------------
+It is a policy server for Postfix
+
+Features:
+1) Greylist
+2) Autowhitelist
+3) Automically Db cleanup
+
+To use:
+1) in /usr/local/etc/postfix/main.cf:
+
+smtpd_recipient_restrictions =
+         reject_unauth_destination
+         check_policy_service inet:127.0.0.1:9998
+
+127.0.0.1:9998_time_limit = 3600
+
+2) Run greybottle as daemon
+  ./greybottle &
+
+3) Restart Postfix.
+
+4) You can use newsyslog or logrotate to rotate greybottle log.
+It handles SIGUSR1 for this purpose, not SIGHUP.
+
+Dependency:
+
+sqlite 3.x
+ocaml-sqlite3 1.2+
+
+To compile:
+
+   make greybottle
+
+You'll find greybottle and greybottle.conf.example in greybottle directoty

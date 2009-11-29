@@ -1,0 +1,5 @@
+plugin_admin: join args
+plugin_translate: a hyphen
+plugin_vocabulary: spaces around =
+scheduler crashes when running procedure raises an exception
+

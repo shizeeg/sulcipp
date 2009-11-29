@@ -1,0 +1,634 @@
+2009-01-27  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/config.ml: Using of Getopt module replaced to Arg module
+
+2009-01-25  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/plugin_currency.ml: Added command "curr refresh"
+	* sulci/plugin_userinfo_muc.ml: Bugfix for command 'status'
+
+2009-01-14  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/muc.ml: Bugfix
+	* sulci/plugin_cerberus.ml (Nick): Bugfix
+
+	* doc/sulci/*.txt: Updated (thanks to Sergei V. Fedosoff aka eleksir)
+
+2009-01-10  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/plugin_ping.ml: Bugfix
+
+2009-01-09  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/plugin_vocabulary.ml: The MUC related stuff moved into 
+	plugin_vocabulary_muc.ml
+	* sulci/plugin_userinfo.ml: The MUC related stuff moved into 
+	plugin_userinfo_muc.ml
+	* sulci/plugin_admin.ml: The MUC related stuff moved into 
+	plugin_admin_muc.ml
+	* sulci/Makefile: Conditional compilation for MUC
+
+2009-01-07  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/hooks.ml: Splitting from MUC: adaptet get_entity function
+	* sulci/muc.ml: Likewise
+	* sulci/iq.ml: Updated
+	* sulci/plugin_ping.ml: Likewise
+	* sulci/plugin_userinfo.ml: Likewise
+	* sulci/plugin_vcard.ml: Likewise
+
+2009-01-06  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/hooks.ml, muc.ml, types.ml: Fixed bugs related to MUC splitting
+	* sulci/plugin_ping.ml, plugin_admin.ml, iq.ml: Updated
+
+2009-01-05  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/plugin_admin.ml, plugin_seen.ml: Bugfix
+
+2009-01-04  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/*: Now MUC related API splitted from main API to have a 
+	possibility to plug or unplug MUC related stuff; now MUC conferences are
+	stored in Sqlite3 db instead of a config file.
+	(Very experimental version of sulci)
+
+2008-12-28  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/hooks.ml: Removed passing 'event' parameter to commands
+	* sulci/*: Updated
+
+2008-12-27  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/logger.ml: Removed
+	* sulci/*.ml: Instead of local logger module now it uses logger library
+
+	* sulci/lang.ml: Removed any depending on Muc module
+	* sulci/hooks.ml: Added a new argument 'lang' for processing commands
+	* sulci/*: Updated
+
+2008-12-25  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* libs/logger: A new implementation of logger library (moved from trunk2)
+	* libs/plain_config: Removed
+	* libs/ini_config: A new implementation of library for parsing .ini files
+	(moved from trunk2)
+
+	* greybottle/greybottle.ml: Updated to use new libraries logger and
+	ini_config.
+
+2008-12-15  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/plugin_vocabulary: Typo
+
+2008-12-02  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/plugin_userinfo.ml: Bugfix
+	* sulci/plugin_vcard.ml: Bugfix
+
+	* sulci/plugin_vocabulary.ml: New command: wtffind
+	New command: wtfremove key<=value> with MUC role checking
+
+	* sulci/config.ml: Bugfix
+
+2008-12-01  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/plugin_cerberus.ml (Nick): More proper behaviour when the bot
+	attempts to kick
+
+	* sulci/config.ml: Started an attempt to move all working with config/xml
+	into config module
+	* sulci/logger.ml: Likewise
+
+2008-11-26  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/plugin_ping.ml: Bugfix
+
+	* sulci/iq.ml: Bugfix
+
+2008-11-23  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* sulci/plugin_vocabulary.ml: Bugfix in SQL
+
+	* sulci/common.ml: Removed useless get_error_semantic function
+	* sulci/plugin_cerberus.ml (Nick): Likewise
+
+2008-11-21  Anastasia J. Gornostaeva  <ermine@ermine.pp.ru>
+
+	* libs/xmpp/: Used 'jid' module from trunk2/lib/xmpp
+
+	* sulci/*: Updated to use 'jid' module
+
+2008-11-19  Anastasia J. Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/sqlite_util.ml: Support for Sqlite3
+	* sulci/plugin_markov.ml: Likewise
+	* sulci/plugin_seen.ml: Likewise
+	* sulci/plugin_talkers.ml: Likewise
+	* sulci/plugin_vocabulary.ml: Likewise
+
+	* libs/sqlite: Removed support for Sqlite2
+	* libs/sqlite_util: Likewise
+	* packages/ocaml-sqlite-0.3: Likewise
+
+	* greybottle/greybottle.ml: Support for Sqlite3
+
+2008-11-19  Anastasia J. Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_roulette.ml: Small bugfix
+	* sulci/plugin_userinfo.ml: Small bugfix for lang pack
+	* sulci/logger.ml: Typo
+
+2008-11-14  Anastasia J. Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_translate.ml: Updated to changed desigh of translate.ru
+
+2008-11-13  Anastasia J. Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_google_translate.ml: Bugfix in lang message
+	* sulci/plugin_translate.ml: Likewise
+
+	* sulci/lang/en.msg: Updated
+	* sulci/lang/ru.msg: Likewise
+
+2008-11-11  Anastasia J. Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_translate.ml: Bugfix (forgot to raise Filtered exception)
+
+	* sulci/plugin_google_translate.ml: Bugfix: catch all exception inside
+	http processing
+	* sulci/plugin_google.ml: Likewise
+	* sulci/plugin_currency.ml: Likewise
+	* sulci/plugin_weather.ml: Likewise
+	* sulci/plugin_yandex.ml: Likewise
+
+	* sulci/lang/en.msg: Updated
+	* sulci/lang/ru.msg: Likewise
+
+2008-11-08  Anastasia J. Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/lang.ml: the function which processes the format string is 
+	reworked to allow change order of the format arguments: %ns, where n is
+	a number in range 1-9.
+
+	* sulci/plugin_admin.ml: More beautiful view of the function sulci_set
+
+2008-11-07  Anastasia J. Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/common.ml: Now function make_msg controls a message length and
+	can split a long message into several messages.
+
+	* sulci/sulci.conf.example: <max_message_length value="4000"/> - the 
+	generic limit of message length to be sent.
+
+	* (sulci/all): Reformatted
+
+2008-11-06  Anastasia J. Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_cerberus.ml: Bugfix in storing of room topics
+
+	* libs/scheduler, libs/scheduler2: New implementation of scheduler 
+	library
+
+	* sulci/types.ml, sulci/muc_log.ml, sulci/plugin_globalstats.ml,
+	sulci/plugin_currency.ml: Updated to use new scheduler library
+
+2008-11-05  Anastasia J. Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_google_translate.ml: Now it processes multiple lines text.
+
+2008-11-04  Anastasia J. Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_google_translate.ml: Bugfix
+	* sulci/plugin_translate.ml: Adapted for new version of wap.translate.ru
+
+	* sulci/plugin_google_translate.ml: More correct http request to Google
+	Translator
+
+2008-11-03  Anastasia J. Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_hostip.ml: Now it recodes the information into UTF-8.
+	* sulci/plugin_google_translate.ml: Slightly improved controlling of
+	conversation
+
+2008-11-02  Anastasia J. Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/http_suck.ml: Now 'request' function returns info about media
+	type and charset of the response; slight cleanup of code
+	* sulci/plugin_hostip.ml, plugin_yandex.ml, plygin_google.ml,
+	plugin_translate.ml, plugin_weather.ml, plugin_currency.ml: Updated
+	* sulci/plugin_google_translate.ml: New plugin to use Google translator
+	(not completed)
+
+2008-11-01  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* OCamlMakefile: updated to latest version
+:	* libs/Makefile, libs/xmlstring/xmlstring.ml,
+	libs/xmlstring_netstring/xmlstring_netstring.ml,
+	libs/xmpp/xmlstream.ml: updated to latest OCaml (3.10.2) compiler
+
+2006-08-14  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* libs/xmpp/xmpp.ml: function iq_query renamed to make_iq
+	* sulci/*: updated
+
+	* libs/xmpp/auth.ml: Improved and updated to work correctly with
+	ejabberd, wildfire and jabberd2
+
+	* libs/xmpp/auth.ml renamed to libs/xmpp/sasl.ml
+
+2006-05-01  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* libs/*: xmpp and service directories moved to here; 
+	added META files into all subdirectories, now libraries support 
+	ocamlfind.
+	* libs/xmlstring: xmlstring_netstring moved into separate project.
+	* libs/cryptokit: Creates META file to support ocamlfind
+	* libs/sqlite: Creates META file to support ocamlfind
+	* libs/config: Renamed to libs/plain_config
+	* libs/logger: New utility for logging and supports Camlp4 syntax
+	extension
+	* libs/xmpp: Slightly improved support for various JEPs and bugfixs;
+	now supports x:commands (JEP 50)
+	* libs/service: Slightly reworked to be more clean FP
+
+	* sulci/hooks.ml: New function get_entity to help understand command
+	arguments
+	* sulci/iq.ml: New functions to unify processing of Stanza Errors and
+	generating IQ queries
+	* sulci/plugin_userinfo.ml: Reworked
+	* sulci/plugin_vcard.ml: Reworked
+	* sulci/plugin_ping.ml: Reworked
+
+	* sulci/globalstats.ml: Commands 'uptime' and 'stats' moved into
+	sulci/plugin_userinfo.ml
+	* sulci/lang.ml, sulci/plugin_admin.ml: Now it is possible to edit
+	entries of lang packs; new command "lang_admin <lang> <msgid> <string>"
+
+	* sulci/common.ml: Function make_msg modified to append a tail of
+	message to cutted ones
+	* sulci/plugin_yandex.ml: Updated
+	* sulci/plugin_google.ml: Updated
+
+	* sulci/find_url,ml: Reworked after perusal of 
+	http://www.foad.org/~abigail/Perl/url2.html
+
+	* sulci/lang/ru.msg, en.msg: Updated
+	
+	* sulci/(other): Small cosmetic changes and bugfixes
+
+	* echo_service/: Updated for changes in service and xmpp libraries
+		
+2006-03-31  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/common.ml: bugfix in make_msg function (correct cutting big
+	messages for groupchats)
+
+2006-02-21  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_seen.ml: Bugfix
+	* sulci/muc_log.ml: Bugfix
+	* sulci/plugin_cerberus.ml: Updated
+
+2006-02-06  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* xmpp/error.ml: Added parser for stream:error stanza and modified
+	parser for stanza errors
+	* sulci/plugin_globalstats.ml, sulci/plugin_userinfo.ml, 
+	sulci/plugin_ping.ml: Updated
+	* sulci/types.ml: bugfix in Nicks.add function
+	* sulci/sulci.ml: Slightly improved stream:error processing 
+	(not completed)
+
+	* doc/sulci/*.txt: Updated (Thanks to Denis Shaposhnikov)
+
+2006-02-05  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_seen.ml: Now it fetches a db filename from the config
+	* sulci/plugin_vocabulary.ml: Bugfix
+
+2006-02-03  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_vcard.ml: Updated
+	* sulci/plugin_tld.ml: Updated to fetch db filename from the config
+	* sulci/tld: Now db for plugin_tld is generated at the compilation time
+	* sulci/lang: Now *.htbl are generated at the compilation time
+
+	* sulci/util/wtf: Small programm to convert dbm-based vocabulary db into
+	sqlite-based one
+	
+2006-01-29  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_misc.ml: Minor fix
+	* sulci/plugin_hostip.ml: New plugin for interface with 
+	http://hostip.info
+	* sulci/lang/ru.msg, sulci/lang/en.msg: Updated
+
+2006-01-27  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_google.ml: Updated to use Dehtml module
+	* sulci/plugin_userinfo.ml: Updated to use lang pack
+
+2006-01-26  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/muc.log: Added processung MUC entry's role and affiliation
+	* sulci/types.ml: likewise
+	* sulci/muc_log.ml: Updated
+	* sulci/plugin_vocabulary.ml: Updated to support lang pack
+	* sulci/plugin_seen.ml: Slightly modified to select latest entry from db
+	* sulci/plugin_markov.ml: Added handle to process room leaving
+	* sulci/hooks.ml: Bugfix
+	* sulci/plugin_roulette.ml: Now it checks muc's roles of players
+	* sulci/ plugin_cerberus.ml: More information in reports
+
+	* sulci/lang/ru.msg, sulci/lang/en.msg: Updated
+
+2006-01-15  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* libs/dehtml: New module for converting from html to plain text
+	* libs/xml/*: Added two function for xml decoding and encoding
+	five entities (<>'"&)
+	* libs/xmlstring/xmlstring.ml: removed old xml-entities decoder
+	* xmpp/stringprep.ml, xmpp/auth.ml: updated to avoid compiler's warnings
+
+	* sulci/common.ml: the function make_msg sends now a piece of long 
+	message to groupchat, not only to private chat
+	* sulci/plugin_*: updated
+	* sulci/plugin_globalstats.ml: added more error processing for 
+	command 'stats'
+	* sulci/muc.ml: reworked function split_nick_body: now it splits nicks 
+	from text by ':', ';', ',' and '>'
+	* sulci/plgin_admin.ml: new command 'invite jid [room]"
+	* sulci/plugin_yandex.ml: new command 'blogs text' for searching in 
+	blogs using yandex' search engine
+	* sulci/plugin_vocabulary.ml: reworked to use sqlite instead of dbm
+	* sulci/lang/ru.msg, en.msg: updated
+
+2005-12-04  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* libs/xmlstring/xmlstring.ml: partially reworrked and added 
+	validating for digital entities
+	* libs/xml/xml.ml: minor optimization
+	* xmpp/xmpp.ml: added an item to jid structure, that keeps original jid
+	* sulci/plugin_cerberus.ml, sulci/plugin_userinfo.ml,
+	sulci/plugin_admin.ml: updated
+
+2005-12-02  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* xmpp/xmlstream.ml, libs/xmlstring/xmlstring.xml: bugfix
+
+	* service/service.ml: added creating of pidfile
+	* service/Makefile: added bytecode option
+
+	* xmpp/error.ml: added workaround for relaxed 'error' child 
+	(which are withour xmlns)
+	* xmpp/Makefile: added bytecode option
+
+	* libs/*/Makefile: added bytecode option
+	* lib/midge: removed as useless library
+
+	* sulci/plugin_cerberus.ml: added check user's resource
+
+2005-11-20  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* libs/xmlstring/xmlstring.ml: Now in mostly cases it cares about 
+	valid XML Char ranges
+
+2005-11-16  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/muc.ml: added an event when sulci exits from room
+	* sulci/plugin_markov.ml: more catchings for exceptions
+	* sulci/plugin_globalstats.ml: likewise
+	* sulci/types.ml, sulci/hooks.ml: code cleanup
+	* sulci/plugin_admin.ml: added 'leave room' command
+
+	* xmpp/xmpp.ml: cleanup
+
+2005-10-17  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* xmpp/xmpp.ml: bugfix
+	* xmpp/error.ml: added xml:lang for text element
+	* sulci/*.ml: addes some logging strings
+
+2005-10-16  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/logger.ml: minor improvement; now it is possible to rotate 
+	sulci_life.log by sending HUP signal to sulci
+
+	* sulci/plugin_translate.ml: bugfix
+
+2005-10-15  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_userinfo.ml: catched unfilled fields in iq:version reply
+
+2005-10-14  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* xmpp/*: bugfixes 
+	* libs/xmlstring/*: small improvement
+	* sulci/http_suck.ml: added workaround to catch some unexpected 
+	exceptions due to weird design of netclient library
+	* sulci/plugin_markov.ml: minor bugfix
+	* sulci/config.ml: small improving due to updated xmlstring library
+
+2005-09-18  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/find_url.ml: Lexer to find potentional URLs in text
+	* sulci/muc_log.ml: Updated
+	* sulci/muc_log: Bugfix (kick/ban reason) and slightly improved
+	* sulci/logger.ml: all error and other informative messages now should
+	be printed in logfile
+	*  sulci/plugin_seen.ml, plugin_talkers: Updated to work when the bot
+	does not view jid of room participant
+	* sulci/plugin_cerberus.ml: updated for new russian words
+	* sulci/http_suck.ml: it's now instead of 'midge' library; improved to
+	work in multi-threading
+	* sulci/Makefile: make tarball
+	* sulci/*: updated for logger and http_suck usage
+	* xmpp/*: Improved; now xmlstream has an option to decode xml entries
+	* libs/xmlstring/*: Updated fpr RSS service
+	* libs/xml/*: bugfix
+	* libs/scheduler/*: Now time interval for tacks is a function
+
+2005-08-03  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* libs/midge/midge.ml: Partially reworked to properly handle POSTs
+	* sulci/plugin_google.ml: slightly updated upto midge implementation
+
+2005-08-02  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* libs/midge: a wrapper to netclient library
+	* libs/http: removed as ugly library
+	* libs/xml/xml.ml: Bugfix
+	* libs/xmlstring: Now parses "&#XXX;" entities in xml (to process wml) 
+	and there are two librares to use Netconversion when it is needed really
+	* libs/hex/hex.ml: added a function to convert integer to hex format
+	* libs/timer: removed as useless library
+	* xmpp/*: bugfixes and partially reworked
+
+	* sulci/plugin_google.ml, sulci/plugin_weather.ml, 
+	sulci/plugin_currency.ml: updated to use Netclient library by
+	Gerd Stolpmann
+	* sulci/plugin_translate.ml: New prugin, uses www.translate.ru
+	service (not completed yet)
+	* sulci/plugin_xmlrpc.ml: New plugin, process XMLRPC (in Ocaml format, 
+	not text) (not completed yet)
+	* sulci/fcgi/*: a fcgi script to make vcard search from website, uses
+	plugin_xmlrpc (not completed yet)
+	* sulci/plugin_vcard.ml: New plugin: shows vcard of specified user
+	(not completed yet)
+	* sulci/*: updated to modified xmpp library
+	* sulci/Makefile: partially reworked
+
+	* service: New project: An jabber service common library (in progress)
+	* echo-service: Simplest echo service, based on 'service' library
+
+	* freezed: probably useless projects
+
+2005-07-23  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* libs/xml/xml.ml: bugfix in match_xml function
+	* xmpp/xmpp.ml: Modified to handle networking problems
+	* xmpp/auth.ml: Added a raising exception when the client failed to 
+	authorize
+	* sulci/muc.ml: Updated to do reconnecting
+	* sulci/sylci.conf.example: Updated
+
+2005-07-22  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* libs/getopt/*: New module: Getopt (Command line parser)
+	* sulci/config.ml: Added command line options: --help, --version and 
+	--config
+	* sulci/common.ml: now it is possible to set message limit for public
+	MUC from config file (<muc msg_limit="400" />")
+	* sulci/plugin_markov.ml: now it is possible to set a length (in words)
+	of generated message in config file (<markov msg_limit="20">)
+	* sulci/sulci.conf.example: Updated
+	* sulci/Makefile: Updated
+	* sulci/plugin_currency.ml: Ceanup
+	* sulci/*: All error ouptut directed to stderr
+
+2005-07-17  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* xml/*: xml.ml and xmlstring.ml now are separate librares and moved to 
+	libs/ directory
+	* libs/http/hex.ml: moved to libs/hex directory
+	* sulci/icalc_ulex.ml, sulci/pcalc_lex.mll: Now it is possible to write 
+	hexadecimal and binary digits as 0x10 and 0b111
+	* sulci/common.ml: in function make_msg added a message limit control
+	* sulci/plugin_admin.ml: new command "sulci_set variable=value", 
+	currently it is possible to set msg_limit to expected value
+	* sulci/muc.ml: bugfix
+	* sulci/muc_log.ml: improved recognization of URLs
+	* sulci/plugin_userinfo.ml: improved xmpp error processing in
+	version_server
+	* xmpp/stringprep.ml, sulci/hooks.ml, sulci/common.ml: more accurater
+	error printing to stderr
+	* lang/en.msg, lang/ru.msg: updated for version_server command
+	* sulci/hooks.ml, sulci/types.ml: New handling of invalid stanzas
+	* doc/sulci/*: A command list and their description (Thanks to Denis 
+	Shaposhnikov)
+
+2005-06-01  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* libs/config/*: New module for parsing plain text-file configs
+	* greybottle/*: New programm, a policy-server for Postfix
+	* libs/sqlite_util/sqlite_util.ml: Added right escaping of single-quote 
+	(') for strings
+	* sulci/lang/*.msg, *.htbl: Updated and bugfixes
+	* README: Updated
+
+2005-05-28  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/muc_log.ml, sulci/plugin_currency.ml: fixed time interval
+
+2005-05-25  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* xmpp/uni_data.ml, xmpp/uni_norm.ml, xmpp/stringprep.ml: Support for 
+	Stringprep, based on ejabberd stringprep
+	* xmpp/xmpp.ml: jid_of_string, safe_jid_of_string: now they support 
+	stringprep
+	* sulci/*.ml: Updated to handle stringprep
+	* xmpp/error.ml: Added parsing of stanza that contains error child
+	* sulci/*.ml: bugfixes and partially improved
+	* lang/ru.msg, lang/en.msg: Updated
+	* sulci/langcompile.ml: Added "diff" command to view lack of messages
+	* sulci/plugin_userinfo.ml: New command version_server
+
+a2005-03-26  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/*: reworked processing xmpp packets
+
+2005-03-21  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/muc.ml: logger moved into separate module
+	* sulci/muc_log.ml: new module: groupchat logger
+	* sulci/hooks.ml: added hook for filtering
+	* sulci/plugin_cerberus.ml: modified for using this hook
+
+2005-03-17  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_cerberus.ml: added new plugin for filterring out russian
+	badwords
+	* sulci/plugin_mueller.ml: removed badword filter
+	* sulci/common.ml: cosmetic modification in make_msg function
+	* sulci/muc.ml: now kick function decides itself what lang pack to use
+	* sulci/plugin_roulette.ml: updated to use modified kick function
+
+2005-03-14  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/lang/*.msg: updated
+	* sulci/langcompile.ml: now it is possible to comment out in *.msg by 
+	"//" and insert tab mnemonics
+	* sulci/plugin_talkers.ml: added new plugin for "talker stats"
+	* sulci/plugin_calc.ml and related files: more lang pack support
+	* sulci/plugin_markov.ml: now it works separately in each room
+	* sulci/p;ugin_userinfo.ml: bugfix
+	* sulci/sulci.conf.example: updated
+
+2005-02-26  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* plugin_seen.ml: New plugin for 'last seen' and greeting stuff
+	* icalc_ulex.ml, icalc.mly, pcalc_lexer.mll, pcalc.mly: added '%' arith 
+	operation
+	* lang.ml, lang/ru_time.ml, lang/en_time.ml: added function for expand 
+	seconds to full human readable message
+	* lang/en.msg, lang/ru.msg: updated
+	* plugin_globalstats.ml, plugin_userinfo.ml, plugin_ping.ml: Updated to
+	use new lang time stuff
+
+2005-02-10  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* libs/scheduler/scheduler.ml: better implementation of timer
+	* sulci/muc.ml, sulci/plugin_currency.ml, sulci/plugin_globalstats.ml:
+	switched from timer to scheduler
+	* sulci/plugin_weather.ml: bugfix
+	* sulci/plugin_admin.ml: updated to be working in rooms
+
+2005-02-09  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/lang/es.msg: added spanish lang pack (thanks to Badlop)
+	* sulci/lang/*.msg: bugfixs
+
+2005-02-08  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* sulci/plugin_dict.ml: now it is posssible to specify a dict server,
+	added more language support
+	* sulci/muc.ml, sulci/plugin_currency.ml, plugin_globalstats.ml: bugfix 
+	(timer corrected)
+	* xmpp/xmpp.ml: bugfix (pipe)
+	* plugin_weather.ml: updated language support
+	* lang/*: updated
+	* sulci.conf.example: updated
+
+2005-02-05  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* README: update
+	* sulci/Makefile, sulci/Makefile.conf: now you can select plugins for
+	compilation
+
+2005-02-04  Anastasia Gornostaeva  <ermine_at_ermine_dot_pp_dot_ru>
+
+	* */Makefile: changes to use camlp4 preprocessor
+	* sulci/icalc_ulex.ml, xmpp/xmlstream.ml, xml/xmlstring.ml: removed 
+	hard-coded path to ulex preprocessor
+

@@ -1,0 +1,5 @@
+[global]
+key1 = a,b,c,d 
+key2 = true
+key3 = 1
+key4 =

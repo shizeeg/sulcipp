@@ -1,0 +1,157 @@
+9
+
+dir
+375
+http://home.ermine.pp.ru/svn/ocaml/trunk
+http://home.ermine.pp.ru/svn/ocaml
+
+
+
+2009-01-26T21:54:19.557235Z
+375
+ermine
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d9eb2e17-d3ea-0310-9075-86a6e2a55b6b
+
+sulci
+dir
+
+greybottle
+dir
+
+freezed
+dir
+
+ChangeLog
+file
+
+
+
+
+2009-03-31T00:13:08.000000Z
+c0350cb01ed0462d095b9b5fe91e033f
+2009-01-26T21:48:28.669413Z
+374
+ermine
+
+myocamlbuild.ml
+file
+
+
+
+
+2009-03-31T00:13:08.000000Z
+47cbc8e05b67e7e307a9dcc87bed3f10
+2008-12-25T20:04:40.182948Z
+357
+ermine
+
+OCamlMakefile
+file
+
+
+
+
+2009-03-31T00:13:08.000000Z
+339cc306ab8d86ee4dc1904993978e8e
+2008-11-01T19:44:08.371035Z
+298
+ermine
+
+libs
+dir
+
+misc
+dir
+
+README
+file
+
+
+
+
+2009-03-31T00:13:08.000000Z
+99058f850aebd5125ad7b0f5b4babf3c
+2005-12-02T08:26:29.424135Z
+90
+ermine
+
+echo_service
+dir
+
+bugs
+file
+
+
+
+
+2009-03-31T00:13:08.000000Z
+35017b5a7a574e6a2a1b34c39841d678
+2005-09-18T17:25:38.603464Z
+75
+ermine
+
+TODO
+file
+
+
+
+
+2009-03-31T00:13:08.000000Z
+9e8336b92dec80d3a8ac2f41e06e4bb5
+2005-08-02T12:11:30.977936Z
+71
+ermine
+
+doc
+dir
+
+COPYING
+file
+
+
+
+
+2009-03-31T00:13:08.000000Z
+393a5ca445f6965873eca0259a17f833
+2005-01-04T19:59:16.633946Z
+5
+ermine
+
+Makefile
+file
+
+
+
+
+2009-03-31T00:13:08.000000Z
+0919a527e0f1506dc20d5c26d37b6d81
+2006-05-01T19:05:13.735906Z
+115
+ermine
+
+myocamlbuild_config.ml
+file
+
+
+
+
+2009-03-31T00:13:08.000000Z
+9aac85cba5fccd4769b37bfb30ed66e8
+2008-12-22T18:58:59.844908Z
+347
+ermine
+

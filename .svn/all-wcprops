@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/svn/ocaml/!svn/ver/375/trunk
+END
+bugs
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/ocaml/!svn/ver/75/trunk/bugs
+END
+TODO
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/ocaml/!svn/ver/71/trunk/TODO
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/ocaml/!svn/ver/374/trunk/ChangeLog
+END
+myocamlbuild.ml
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/ocaml/!svn/ver/357/trunk/myocamlbuild.ml
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/ocaml/!svn/ver/5/trunk/COPYING
+END
+OCamlMakefile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/ocaml/!svn/ver/298/trunk/OCamlMakefile
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/svn/ocaml/!svn/ver/90/trunk/README
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/ocaml/!svn/ver/115/trunk/Makefile
+END
+myocamlbuild_config.ml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/ocaml/!svn/ver/347/trunk/myocamlbuild_config.ml
+END

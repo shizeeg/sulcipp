@@ -1,0 +1,6 @@
+description = "Simple XML library"
+requires = ""
+version = "1"
+archive(byte) = "xml.cma"
+archive(native) = "xml.cmxa"
+

@@ -1,0 +1,3 @@
+<scheduler.ml{i,}>: thread
+<tests/test.ml>: thread
+<tests/test.{byte,native}>: thread, use_unix, use_thread, use_scheduler

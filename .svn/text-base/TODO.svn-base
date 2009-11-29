@@ -1,0 +1,20 @@
+sulci:
+-----
+improve vocabulary
+improve dict: add networking
+more configurable: turn on/off plugins
+translate weather, http://weather.gov/forecasts/xml/ 
+whiteboard
+account creating
+roster
+jid ignore list
+command list, help
+config per room
+MUC invite
+
+http://www.csse.monash.edu.au/~jwb/j_jmdict.html
+
+srv
+namespace -> create pa_xmpp (a camlp4 preprocessor for ocaml)
+
+libs/config: instead of IDENT pass a list of keywords

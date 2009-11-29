@@ -1,0 +1,6 @@
+description = "Simple Getopt library"
+requires = ""
+version = "1"
+archive(byte) = "getopt.cma"
+archive(native) = "getopt.cmxa"
+

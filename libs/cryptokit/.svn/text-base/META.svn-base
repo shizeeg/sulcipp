@@ -1,0 +1,9 @@
+# Specifications for the "cryptokit library:
+requires = "unix"
+description = "Cryptokit"
+version = "1.4"
+directory = "^"
+browse_interfaces = " Nums Cryptokit "
+archive(byte) = "nums.cma cryptokit.cma"
+archive(native) = "nums.cmxa cryptokit.cmxa"
+

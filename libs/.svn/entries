@@ -1,0 +1,169 @@
+9
+
+dir
+375
+http://home.ermine.pp.ru/svn/ocaml/trunk/libs
+http://home.ermine.pp.ru/svn/ocaml
+
+
+
+2009-01-26T21:48:28.669413Z
+374
+ermine
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d9eb2e17-d3ea-0310-9075-86a6e2a55b6b
+
+logger
+dir
+
+xmpp
+dir
+
+xmlstring_netstring
+dir
+
+hex
+dir
+
+Makefile.inc
+file
+
+
+
+
+2009-11-09T19:39:22.000000Z
+d9373ea2b762b9b508a351386a81e881
+2006-05-01T19:12:53.016683Z
+116
+ermine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+193
+
+xmlstring
+dir
+
+cryptokit
+dir
+
+_tags
+file
+
+
+
+
+2009-11-09T19:39:22.000000Z
+812c00716c7c5b6c83a48b23b97c4f34
+2008-12-25T20:04:40.182948Z
+357
+ermine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+231
+
+strftime
+dir
+
+xml
+dir
+
+service
+dir
+
+getopt
+dir
+
+ini_config
+dir
+
+dehtml
+dir
+
+Makefile
+file
+
+
+
+
+2009-11-09T19:39:22.000000Z
+656accca4459bbb239725279db2e4144
+2009-01-26T21:48:28.669413Z
+374
+ermine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+414
+
+scheduler
+dir
+
