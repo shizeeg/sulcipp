@@ -2,7 +2,7 @@ OCAMLMAKEFILE = ../OCamlMakefile
 
 include ../Makefile.global
 
-VERSION=0.6-alpha-20090127
+VERSION=0.6-alpha-20091130
 
 include Makefile.conf
 
@@ -17,6 +17,7 @@ ifeq ($(PLUGIN_GOOGLE),yes)
   SOURCES1 += plugin_google.ml
   DEHTML = yes
   HTTP_SUCK = yes
+  JSON_STATIC = yes
 endif
 ifeq ($(PLUGIN_GOOGLE_TRANSLATE),yes)
    SOURCES1 += plugin_google_translate.ml
@@ -159,6 +160,14 @@ endif
 ifeq ($(SQLITE), yes)
    SOURCES += sqlite_util.ml
    PACKS += sqlite3
+endif
+
+ifdef JSON_WHEEL
+  PACKS += json-wheel
+endif
+
+ifdef JSON_STATIC
+  PACKS += json-static
 endif
 
 SOURCES += $(SOURCES1) $(LANGPACKS) sulci.ml
