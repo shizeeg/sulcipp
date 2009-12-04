@@ -110,9 +110,9 @@ let process_result doc =
     | x :: xs ->
         match x with
           | Element (tag, attrs, els1) ->
-              if tag = "div" &&
-                (try List.assoc "id" attrs with Not_found -> "") =
-                "result_box" then
+              if tag = "span" &&
+                (try List.assoc "onmouseout" attrs with Not_found -> "") =
+                "this.style.backgroundColor='#fff'" then
                   Some (get_data els1)
               else (
                 match aux_find els1 with
@@ -163,7 +163,8 @@ let translate_text sl tl text xml env out =
       
 (* gtr er ru text *)
 let cmd = Pcre.regexp ~flags:[`DOTALL; `UTF8]
-  "^([a-zA-Z-]{2,5})\\s+([a-zA-Z-]{2,5})\\s(.+)"
+(*    "onmouseout=\"this.style.backgroundColor='#fff'\">(.+)<\/span>"*)
+    "^([a-zA-Z-]{2,5})\\s+([a-zA-Z-]{2,5})\\s(.+)"
   
 let rm_newlines = Pcre.regexp "[\n\r]"
   
